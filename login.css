@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff4ca;
+    display: flex;
+    height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+/* Form container styling */
+.form-container {
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 10px 10px 5px rgba(180, 170, 150, 0.2); */
+    max-width: 400px;
+
+    /* border-radius: 8px; */
+    /* box-shadow: 10px 10px 5px rgba(150, 140, 120, 0.2); */
+    /* box-shadow: 10px 10px 5px rgba(180, 170, 150, 0.2); */
+    box-shadow: 10px 10px 5px rgba(100, 90, 70, 0.2);
+    max-width: 400px;
+    /* box-shadow: 10px 10px 5px rgba(150, 140, 120, 0.2); */
+}
+
+
+/* Form heading */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b3c0f;
+}
+
+/* Input styling */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f2b94c;
+    color: #fff;
+    font-weight: 200;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.form-container button:hover {
+    background-color: #e1a63c;
+}
+
+/* Registration link styling */
+.login ,.register {
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+}
+
+/* Media Queries for responsive design */
+
+/* Tablets and small desktop devices (up to 768px) */
+ @media (max-width: 768px) {
+    .form-container {
+       
+        margin: 50px auto;
+        padding: 15px; 
+    }
+    
+    .form-container h2 {
+        font-size: 18px; 
+    }
+    
+    .form-container input, .form-container button {
+        font-size: 14px;
+        padding: 8px; 
+    }
+} 
+/* Mobile devices (up to 480px) */
+ @media (max-width: 480px) {
+    .form-container {
+        
+        padding: 10px;
+    }
+    
+    .form-container h2 {
+        font-size: 16px;
+    }
+    
+    .form-container input, .form-container button {
+        font-size: 12px; 
+        padding: 6px;
+    }
+    
+    .register { 
+        padding: 10px 0; 
+    }
+}
